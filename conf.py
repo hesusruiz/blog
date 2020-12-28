@@ -1405,27 +1405,32 @@ WARN_ABOUT_TAG_METADATA = False
 
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
-# GLOBAL_CONTEXT = {}
+GLOBAL_CONTEXT = {}
 
-GLOBAL_CONTEXT = {
-    "JIDN": {
-        BLOG_AUTHOR: {   # Or "Given Surname" for alternate authors
-            "image": "http://example.com/my-image.jpg",
+GLOBAL_CONTEXT.update({
+    "JIDN": {},  # Extra info about authors
+    # "JIDN-theme": "theme-base-blue",
+})
 
-            # The following are all individually optional
-            "email": BLOG_EMAIL,  # or something else for alternate authors
-            "bio": """I am the very model of a modern, major general.""",
-            "map": "Madrid, SPAIN",
-            "social": (
-                "https://www.linkedin.com/in/jesus-ruiz-martinez/",
-                "https://github.com/hesusruiz",
-                # You get the idea
-            )
-        }
-        # Add any needed alternate authors
-    }
+# GLOBAL_CONTEXT = {
+#     "JIDN": {
+#         BLOG_AUTHOR: {   # Or "Given Surname" for alternate authors
+#             "image": "http://example.com/my-image.jpg",
 
-}
+#             # The following are all individually optional
+#             "email": BLOG_EMAIL,  # or something else for alternate authors
+#             "bio": """I am the very model of a modern, major general.""",
+#             "map": "Madrid, SPAIN",
+#             "social": (
+#                 "https://www.linkedin.com/in/jesus-ruiz-martinez/",
+#                 "https://github.com/hesusruiz",
+#                 # You get the idea
+#             )
+#         }
+#         # Add any needed alternate authors
+#     }
+
+# }
 
 
 # Add functions here and they will be called with template
