@@ -97,7 +97,7 @@
 'render_galleries', (167936, 56)
 'render_sources', (168448, 56)
 'render_posts:cache\\pages\\1.html', (168960, 336)
-'sitemap:output\\sitemap.xml', (554496, 9053)
+'sitemap:output\\sitemap.xml', (554496, 9049)
 'render_galleries:output\\galleries\\demo\\tesla2_lg.jpg', (175104, 282)
 'copy_files', (175616, 56)
 'copy_assets:output\\assets\\css\\bootblog.css', (176128, 497)

@@ -25,7 +25,8 @@ SITE_URL = "https://hesusruiz.github.io/blog/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://example.com/"
 BLOG_EMAIL = "hesus.ruiz@gmail.com"
-BLOG_DESCRIPTION = "Some reflections on blockchain for the real world"  # (translatable)
+# (translatable)
+BLOG_DESCRIPTION = "Some reflections on blockchain for the real world"
 
 # Nikola is multilingual!
 #
@@ -1134,7 +1135,8 @@ PRETTY_URLS = True
 #       with the MarkdownExtension class and should not be added here.
 # Defaults are markdown.extensions.(fenced_code|codehilite|extra)
 # markdown.extensions.meta is required for Markdown metadata.
-MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.codehilite', 'markdown.extensions.extra']
+MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code',
+                       'markdown.extensions.codehilite', 'markdown.extensions.extra']
 
 # Options to be passed to markdown extensions (See https://python-markdown.github.io/reference/)
 # Default is {} (no config at all)
@@ -1403,12 +1405,28 @@ WARN_ABOUT_TAG_METADATA = False
 
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
-GLOBAL_CONTEXT = {}
+# GLOBAL_CONTEXT = {}
 
-GLOBAL_CONTEXT.update({
-    "JIDN": {},  # Extra info about authors
-    # "JIDN-theme": "theme-base-blue",
-})
+GLOBAL_CONTEXT = {
+    "JIDN": {
+        BLOG_AUTHOR: {   # Or "Given Surname" for alternate authors
+            "image": "http://example.com/my-image.jpg",
+
+            # The following are all individually optional
+            "email": BLOG_EMAIL,  # or something else for alternate authors
+            "bio": """I am the very model of a modern, major general.""",
+            "map": "Madrid, SPAIN",
+            "social": (
+                "https://www.linkedin.com/in/jesus-ruiz-martinez/",
+                "https://github.com/hesusruiz",
+                # You get the idea
+            )
+        }
+        # Add any needed alternate authors
+    }
+
+}
+
 
 # Add functions here and they will be called with template
 # GLOBAL_CONTEXT as parameter when the template is about to be
