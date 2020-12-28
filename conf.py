@@ -168,7 +168,7 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "jidn"
+THEME = "base"
 
 # A theme color. In default themes, it might be displayed by some browsers as
 # the browser UI color (eg. Chrome on Android). Other themes might also use it
@@ -1407,10 +1407,10 @@ WARN_ABOUT_TAG_METADATA = False
 # It can be anything, data, functions, modules, etc.
 GLOBAL_CONTEXT = {}
 
-GLOBAL_CONTEXT.update({
-    "JIDN": {},  # Extra info about authors
-    # "JIDN-theme": "theme-base-blue",
-})
+# GLOBAL_CONTEXT.update({
+#     "JIDN": {},  # Extra info about authors
+#     # "JIDN-theme": "theme-base-blue",
+# })
 
 # GLOBAL_CONTEXT = {
 #     "JIDN": {
