@@ -2,6 +2,10 @@ h1 > a {
     color: indigo;
 }
 
+nav.navbar {
+    background-color:darkblue !important;
+}
+
 .tableblock > thead {
     color: white;
     background-color: #007bff;
