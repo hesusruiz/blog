@@ -1,0 +1,8 @@
+h1 > a {
+    color: indigo;
+}
+
+.tableblock > thead {
+    color: white;
+    background-color: #007bff;
+}
